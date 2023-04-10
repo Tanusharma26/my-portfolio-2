@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="social.css">
+    <script src="https://kit.fontawesome.com/0ad580fb63.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <nav>
+            <img src="image/logo.png" class="logo">
+            <ul id="sidemenu">
+                <li>
+                    <a href="#header" onclick="closemenu()">Home</a>
+                    <a href="#about" onclick="closemenu()">About</a>
+                    <a href="#services" onclick="closemenu()">Services</a>
+                    <a href="#portfolio" onclick="closemenu()">Portfolio</a>
+                    <a href="#contact" onclick="closemenu()">Contact</a>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </li>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="container">
+
+            <div class="header-text">
+                <h1>Software developer</h1>
+                <h2>Hi, I'm <span> Tanu Sharma</span><br>from India</h2>
+            </div>
+        </div>
+    </div>
+    <!--------------------- About --------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/user.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About <span>Me</span></h1>
+                    <p>As a software engineer and UI/UX designer, I have a unique skill set that allows me to design and
+                        develop user-friendly software that is both functional and aesthetically pleasing. I have a deep
+                        understanding of both the technical and creative aspects of software development, which allows
+                        me to create intuitive and visually appealing interfaces that meet the needs of users. My
+                        experience in software engineering and UI/UX design allows me to bridge the gap between
+                        developers and users, ensuring that software is not only functional, but also enjoyable to use.
+                        Whether it's creating wireframes, designing interfaces, or developing software, I am passionate
+                        about creating innovative solutions that make people's lives easier and more efficient.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI?UX</span><br> Designing Web/App interfaces</li>
+                            <li><span>Web Development</span><br> Web App Development</li>
+                            <li><span>App Development</span><br> Building Web Android/iOS apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - current</span><br> UI/UX Design learning by self</li>
+                            <li><span>2021 - 2022</span><br>Team lead at StarApp hackathons</li>
+                            <li><span>2019 - 2020</span><br>UI/UX Design Exective at Coin Digital Ltd.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2025</span><br> B.Tech CSE from Gla University </li>
+                            <li><span>2019</span><br>+2 from Tundla.</li>
+                            <li><span>2017</span><br>10 from Tundla.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------services------------------ -->
+
+    <div class="services" id="services">
+        <div class="container">
+            <h1 class="sub-title">My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Desigin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis
+                        quod cupiditate.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI?UX Desigin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis
+                        quod cupiditate.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Desigin</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat voluptatum illo quasi blanditiis
+                        quod cupiditate.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------------portfolio---------------- -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/work-1.png" alt="">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-2.png" alt="">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="image/work-3.png" alt="">
+                    <div class="layer">
+                        <h3>Online Shopping App</h3>
+                        <p>The app connects you to the talented people around the world.
+                            download it from play store</p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <!-- -------------contact------------ -->
+
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p>
+                        <a style="all:unset" href="mailto:tanu.sharma_cs.aiml21@gla.ac.in">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            tanu.sharma_cs.aiml21@gla.ac.in
+                    </p></a>
+                    <p><a style="all:unset" href="tel:6395974093"><i class="fa-solid fa-square-phone"></i>
+
+                        6395974093
+                    </p></a>
+                    <!-- =============================================== -->
+                    <br>
+                    <br>
+                    <div class="card">
+                        <span>Social &nbsp; Links</span>
+                        <a class="social-link" target="_blank" href=" ">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a class="social-link" target="_blank" href=" ">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                        <a class="social-link" target="_blank" href=" ">
+                            <i class="fa-brands fa-linkedin"></i>
+                        </a>
+                        <a class="social-link" target="_blank" href=" ">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </div>
+
+                    <!-- ========================== -->
+                    <a target="_blank" href="image/my-cv.pdf" class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right"></div>
+                <form name="submit-to-google-sheet">
+                    <span id="msg"></span>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © TANU <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <!-- -----------------script----------------- -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
